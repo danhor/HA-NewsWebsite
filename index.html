@@ -1,0 +1,559 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News Website</title>
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">    
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->        
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="main-css/main.css">
+        
+    </head>
+
+    <body>
+        <!-- Top Header Start -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logo">
+                            <a href="">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+
+
+        <!-- Header Start -->
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="index.html" class="nav-item nav-link active">Blog</a> 
+                            <a href="#" class="nav-item nav-link">Our Courses</a> 
+                            <a href="#" class="nav-item nav-link">Free Webinars</a>
+                            <a href="" class="nav-item nav-link">Review</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            <a href="" class="nav-item nav-link">Sign-up</a>                            
+                            <li><button class="login-button" href="#">Log In</button></li>                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Top News Start-->
+        <div class="top-news">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 tn-left">
+                        <div class="tn-img">
+                            <img src="img/top-news-1.jpg" />                                                        
+                        </div>                        
+                        <div class="tn1-title">
+                            <p href="">Lorem ipsum dolor sit amet adipiscing elit</p>
+                        </div>                            
+                        <!--heart icon-->
+                        <div class="wrapper">
+                            <a class="tn-date" href=""><i class="far fa-clock"></i> 03-Mar-2023</a>                                    
+                            <div class="like">                                
+                                <i onclick="toggleimg1()" id="imgvar1" class="fas fa-heart icon"></i>  
+                                <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                  
+                                <i>12k</i> 
+                            </div>                              
+                         </div>   
+                    </div>
+
+                    
+                    <div class="col-md-6 tn-right">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="img/top-news-2.jpg" />
+                                </div>
+                            
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 13-Dec-2022</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg2()" id="imgvar2" class="fas fa-heart icon"></i>   
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                              
+                                        <i>17k</i> 
+                                    </div>                               
+                                 </div>  
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="img/top-news-3.jpg" />
+                                </div>
+                            
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 08-Jan-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg3()" id="imgvar3" class="fas fa-heart icon"></i> 
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                            
+                                        <i>19k</i> 
+                                    </div>                               
+                                 </div> 
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="img/top-news-4.jpg" />
+                                </div>
+                            
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 01-Feb-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg4()" id="imgvar4" class="fas fa-heart icon"></i>                               
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                              
+                                        <i>22k</i> 
+                                    </div>                               
+                                 </div> 
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="tn-img">
+                                    <img src="img/top-news-5.jpg" />
+                                </div>
+                            
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 08-Jan-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg5()" id="imgvar5" class="fas fa-heart icon"></i> 
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                            
+                                        <i>25k</i> 
+                                    </div>                               
+                                 </div> 
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top News End-->
+
+
+        <!-- 1st Category News Start-->
+        <div class="cat-news">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2><i class="fas fa-align-justify"></i>Sports</h2>                        
+                        <div class="row cn-slider">
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-1.jpg" />
+                                </div>
+
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 03-Nov-2022</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg6()" id="imgvar6" class="fas fa-heart icon"></i>                               
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                              
+                                        <i>14k</i> 
+                                    </div>                               
+                                 </div>                                 
+                            </div>                            
+                           
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-2.jpg" />
+                                </div>
+
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 13-Oct-2022</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg7()" id="imgvar7" class="fas fa-heart icon"></i>                               
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                              
+                                        <i>100k</i> 
+                                    </div>                               
+                                 </div>                                 
+                            </div>                            
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-3.jpg" />
+                                </div>
+
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 05-May-2022</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg8()" id="imgvar8" class="fas fa-heart icon"></i>   
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                          
+                                        <i>107k</i> 
+                                    </div>                               
+                                 </div>                                 
+                            </div>                                                           
+                        </div>                    
+                    </div>
+
+                    <!--Technology news -->
+                    <div class="col-md-6">
+                        <h2><i class="fas fa-align-justify"></i>Technology</h2>
+                        <div class="row cn-slider">
+                            
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-4.jpg" />
+                                </div>
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 03-Dec-2022</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg9()" id="imgvar9" class="fas fa-heart icon"></i> 
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                            
+                                        <i>123k</i> 
+                                    </div>                               
+                                 </div>                                                                       
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-5.jpg" />
+                                </div>
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 03-Feb-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg10()" id="imgvar10" class="fas fa-heart icon"></i>  
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                           
+                                        <i>122k</i> 
+                                    </div>                               
+                                 </div>                                                                       
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-6.jpg" />
+                                </div>
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div> 
+
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 10-Apr-2022</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg11()" id="imgvar11" class="fas fa-heart icon"></i>
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                             
+                                        <i>170k</i> 
+                                    </div>                               
+                                 </div>                                                                       
+                            </div>                               
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category News End-->
+
+
+        <!--2nd Category News Start-->
+        <div class="cat-news">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2><i class="fas fa-align-justify"></i>Business</h2>
+                        <div class="row cn-slider">
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-7.jpg" />
+                                </div>   
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div>  
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 12-Mar-2022</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg12()" id="imgvar12" class="fas fa-heart icon"></i> 
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                            
+                                        <i>10k</i> 
+                                    </div>                               
+                                </div>                                                                    
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-8.jpg" />
+                                </div>   
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div>  
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 04-Mar-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg13()" id="imgvar13" class="fas fa-heart icon"></i>
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                             
+                                        <i>10k</i> 
+                                    </div>                               
+                                </div>                                                                    
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-9.jpg" />
+                                </div>   
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div>  
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 15-Jan-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg14()" id="imgvar14" class="fas fa-heart icon"></i> 
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                            
+                                        <i>180k</i> 
+                                    </div>                               
+                                </div>                                                                    
+                            </div>             
+                        </div>
+                    </div>
+
+                    <!-- Entertainment -->
+                    <div class="col-md-6">
+                        <h2><i class="fas fa-align-justify"></i>Entertainment</h2>
+                        <div class="row cn-slider">
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-10.jpg" />
+                                </div>   
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div>  
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 03-Mar-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg15()" id="imgvar15" class="fas fa-heart icon"></i> 
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                            
+                                        <i>160k</i> 
+                                    </div>                               
+                                </div>                                                                    
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-11.jpg" />
+                                </div>   
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div>  
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 30-Jan-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg16()" id="imgvar16" class="fas fa-heart icon"></i>
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                             
+                                        <i>199k</i> 
+                                    </div>                               
+                                </div>                                                                    
+                            </div>        
+                            
+                            <div class="col-md-6">
+                                <div class="cn-img">
+                                    <img src="img/cat-news-12.jpg" />
+                                </div>   
+                                <div class="tn-title">                                    
+                                    <p href="">Lorem ipsum dolor sit amet.</p>
+                                </div>  
+                                <div class="wrapper">
+                                    <a class="tn-date" href=""><i class="far fa-clock"></i> 09-Mar-2023</a>                                    
+                                    <div class="like">                                
+                                        <i onclick="toggleimg17()" id="imgvar17" class="fas fa-heart icon"></i> 
+                                        <i onclick="toggle_read_unread(this)" class="fas fa-envelope icon"></i>                                                                                            
+                                        <i>20k</i> 
+                                    </div>                               
+                                </div>                                                                    
+                            </div>                                                        
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2nd Category News End-->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Blog</h3>
+                            <ul>
+                                <li><a href="#">Data Analyst</a></li>
+                                <li><a href="#">Web Developer</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Success Stories</a></li>
+                                <li><a href="#">Resume</a></li>
+                                <li><a href="#">Hard Skills</a></li>
+                                <li><a href="#">Soft Skills</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Our Courses</h3>
+                            <ul>
+                                <li><a href="#">Data Analytics</a></li>
+                                <li><a href="#">Web Development</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Get in Touch</h3>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Purok 6, Lourdes, Panglao, Bohol</p>
+                                <p><i class="fa fa-envelope"></i>horcera@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>+63-926-876-7879</p>
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Newsletter</h3>
+                            <div class="newsletter">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.
+                                </p>
+                                <form>
+                                    <input class="form-control" type="email" placeholder="Your email here">
+                                    <button class="btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Copyright &copy; <a href="">DataMart</a>. All Rights Reserved</p>
+                    </div>
+
+                    <!--/*** Developer by-->
+                    <div class="col-md-6 template-by">
+                        <p>Developer By <a href="">DataMart Software Developer</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
